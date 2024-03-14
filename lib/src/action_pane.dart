@@ -165,7 +165,7 @@ class _ActionPaneState extends State<ActionPane> implements RatioConfigurator {
       return ratio;
     }
 
-    final absoluteRatio = ratio.abs().clamp(0.0, widget.extentRatio);
+    final absoluteRatio = ratio.abs().clamp(0.0, widget.extentRatio + 0.125);
     if (ratio < 0) {
       return -absoluteRatio;
     }
